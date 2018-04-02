@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-04-02T14:24:01</date>
+  <millis>1522693441710</millis>
+  <sequence>0</sequence>
+  <logger>view.java.jol.ChildLogClass</logger>
+  <level>WARNING</level>
+  <class>view.java.jol.ChildLogClass</class>
+  <method>justLog</method>
+  <thread>1</thread>
+  <message>logging warning message</message>
+</record>
+<record>
+  <date>2018-04-02T14:24:01</date>
+  <millis>1522693441937</millis>
+  <sequence>1</sequence>
+  <logger>view.java.jol.ChildLogClass</logger>
+  <level>WARNING</level>
+  <class>view.java.jol.ChildLogClass</class>
+  <method>lambda$printHandlersInfo$0</method>
+  <thread>1</thread>
+  <message>encoding is null error mesage java.util.logging.ErrorManager@1442d7b5 filter is null formatter is  java.util.logging.XMLFormatter@1efee8e7</message>
+</record>
+</log>
