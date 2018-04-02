@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="LoginSuccessfull.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelStretchLayout id="psl1">
+                <f:facet name="start"/>
+                <f:facet name="end"/>
+                <f:facet name="top">
+                    <af:panelGroupLayout id="pgl1">
+                        <af:outputText value="#{securityContext.userName}" id="ot1"/>
+                        <f:facet name="separator"/>
+                        <af:button text="Logout" id="b1" action="back"/>
+                    </af:panelGroupLayout>
+                </f:facet>
+                <f:facet name="bottom"/>
+                <f:facet name="center"/>
+            </af:panelStretchLayout>
+        </af:form>
+    </af:document>
+</f:view>
