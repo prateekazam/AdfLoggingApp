@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="12.2.1.12.24" id="DataBindings" SeparateXMLFiles="false"
+             Package="view" ClientType="Generic">
+  <pageMap>
+    <page path="/LoginSuccessfull.jsf" usageId="view_LoginSuccessfullPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="view_LoginSuccessfullPageDef"
+          path="view.pageDefs.LoginSuccessfullPageDef"/>
+  </pageDefinitionUsages>
+</Application>

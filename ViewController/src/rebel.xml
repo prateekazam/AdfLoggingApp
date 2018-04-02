@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd" xmlns="http://www.zeroturnaround.com">
+   <classpath>
+      <dir name="/home/prateeks/JDev12/mywork/ADFLogginApp/ViewController/classes">
+         <exclude name=".wlsjsps/**"/>
+      </dir>
+      <dir name="/home/prateeks/JDev12/mywork/ADFLogginApp/ViewController/src">
+         <exclude name="**/*.java"/>
+      </dir>
+   </classpath>
+   <web>
+      <link target="/">
+         <dir name="/home/prateeks/JDev12/mywork/ADFLogginApp/ViewController/public_html"/>
+      </link>
+   </web>
+</application>

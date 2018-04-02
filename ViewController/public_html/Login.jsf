@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="Login.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelStretchLayout id="psl1">
+                <f:facet name="start"/>
+                <f:facet name="end"/>
+                <f:facet name="top"/>
+                <f:facet name="bottom"/>
+                <f:facet name="center">
+                    <af:panelFormLayout id="pfl1">
+                        <f:facet name="footer">
+                            <af:button text="Login" id="b1"
+                                       actionListener="#{backingBeanScope.LoginBb.onLoginDo}"/>
+                        </f:facet>
+                        <af:inputText label="User Name" id="it1"
+                                      value="#{backingBeanScope.LoginBb.userName}"/>
+                        <af:inputText label="Password" id="it2"
+                                      value="#{backingBeanScope.LoginBb.password}"
+                                      secret="true"/>
+                    </af:panelFormLayout>
+                </f:facet>
+            </af:panelStretchLayout>
+        </af:form>
+    </af:document>
+</f:view>
