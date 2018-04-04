@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import java.util.logging.FileHandler;
 import java.util.logging.Handler;
+import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 import java.util.stream.Stream;
@@ -21,24 +22,43 @@ public class ChildLogClass extends JavaLog
     public static void main( String[] args )
     {
         ChildLogClass log = new ChildLogClass();
-        log.createAndAddFileHandler();
-        log.justLog();
+        //        log.createAndAddFileHandler();
+        //        log.setLogLevel();
+        //        log.logWarning();
+        //        log.logFinner();
+        log.printDefaultLoggingInfo();
         //        log.printLoggingInfo();
-                log.printHandlersInfo();
-//        log.getGlobalHandler();
+        //                log.printHandlersInfo();
+        //        log.getGlobalHandler();
 
     }
 
-    private void justLog()
+    private void logWarning()
     {
         _alogger.warning( "logging warning message" );
     }
 
-    private void printLoggingInfo()
+    private void logFinner()
+    {
+        _alogger.finer( "logging warning message" );
+    }
+
+    /**
+     * This method will print default logging info
+     */
+    private void printDefaultLoggingInfo()
     {
         _alogger.warning( "printing logger object name " + _alogger.getName() );
         _alogger.warning( "printing parent logger object name " + _alogger.getParent() );
-        _alogger.warning( "printing parent logger object name " + _alogger.getHandlers() );
+        _alogger.warning( "printing number of default handlers " + _alogger.getHandlers().length );
+        _alogger.warning( "printing global class " + _alogger.getGlobal() );
+        _alogger.warning( "printing filter class " + _alogger.getFilter() );
+        _alogger.warning( "printing level class " + _alogger.getLevel() );
+    }
+
+    private void removeGlobalLog()
+    {
+
     }
 
     private void printHandlersInfo()
@@ -77,5 +97,10 @@ public class ChildLogClass extends JavaLog
             e.printStackTrace();
             _alogger.warning( e.toString() );
         }
+    }
+
+    private void setLogLevel()
+    {
+        _alogger.setLevel( Level.FINER );
     }
 }
